@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/style.css')}}?v_1">
+</head>
+<body>
+    <div class="center__main__parentDiv">
+        <h1 class="title">Random number picker</h1>
+    <form method="POST" class="center__main">
+        <h1 class="innerTitle">Enter 2 numbers and click the button</h1>
+        <label>
+            <input name="min">
+        </label>
+        <label>
+            <input name="max">
+        </label>
+        <input type="submit" class="submit" value="Pick">
+        <h1 class="result">{{ result }}</h1>
+    </form>
+    </div>
+</body>
+</html>
